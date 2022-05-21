@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!--=============== FAVICON ===============-->
+        <link
+          rel="shortcut icon"
+          href="../assets/img/fav-icon.png"
+          type="image/x-icon"
+        />
+        <!--=============== REMIX ICONS ===============-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+          rel="stylesheet"
+        />
+        <!-- ttt -->
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="../assets/css/cardSlider.css" />
+        <link rel="stylesheet" href="../assets/css/events.css" />
+        <link rel="stylesheet" href="../assets/css/styles.css" />
+    
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css"
+          rel="stylesheet"
+        />
+        <script
+          type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+          (function () {
+            emailjs.init("gMqTGLOkvlujF2E8q");
+          })();
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+    
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <title>NICE</title>
+      </head>
+<body>
+     <!--==================== HEADER ====================-->
+     <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav__logo">
+            <!-- <i class=" nav__logo-icon">
+                      <img src="assets/img/Artboard 7.png" alt="" class="home__img" style="height: fit-content;">
+                  </i> -->
+            Nice
+          </a>
+  
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="../index.html#home" class="nav__link ">Accueil</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Events </a>
+              </li>
+              <li class="nav__item">
+                <a href="blog.html" class="nav__link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="../index.html#Members" class="nav__link">Team</a>
+              </li>
+           <!--   <li class="nav__item">
+                <a href="#testimonial" class="nav__link">Temoignages</a>
+              </li>-->
+              <li class="nav__item">
+                <a href="../index.html#contact" class="nav__link">Contactez-nous</a>
+              </li>
+            </ul>
+  
+            <div class="nav__close" id="nav-close">
+              <i class="ri-close-line"></i>
+            </div>
+          </div>
+  
+          <div class="nav__btns">
+            <!-- Theme change button 
+            <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+  
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="spacer">
+      </div>
+      <!--=============== Cards =========================-->
+
+    <!-- Comment added by @Beraich Imane don't tuch it :) ty
+        <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="events.html#Day1" class="nav__link ">DAY 1</a>
+          </li>
+          <li class="nav__item">
+            <a href="events.html#Day2" class="nav__link">Day 2 </a>
+          </li>
+         
+        </ul> 
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>-->
+      <div id="Day1">
+      <div class="Title">
+        <h2>Events of the day 1</h2>
+      </div>
+        <div class="spacer-after">
+        </div>
+      
+      <div class="courses-container">
+        <div class="course">
+          <div class="course-preview">
+            <img src="../assets/img/Conference.jpg" alt="">
+          </div>
+          <div class="course-info">
+          <img class="datepick" src="../assets/img/datepick.png" alt="">
+          <!-- Display the date of the event in h5 -->
+            <h5>coming in 2 days </h5>
+            <h6>Event 1</h6>
+            <h2>Conference</h2>
+            <p>Description of the event</p>
+            <img src="../assets/img/location.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="courses-container">
+        <div class="course">
+          <div class="course-preview">
+            <img src="../assets/img/formations.jpeg" alt="">
+          </div>
+          <div class="course-info">
+          <img class="datepick" src="../assets/img/datepick.png" alt="">
+          <!-- Display the date of the event in h5 -->
+            <h5>coming in 2 days </h5>
+            <h6>Event 2</h6>
+            <h2>Formations</h2>
+            <p>Description of the event</p>
+            <img src="../assets/img/location.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="courses-container">
+        <div class="course">
+          <div class="course-preview">
+            <img src="../assets/img/stands.jpg" alt="">
+          </div>
+          <div class="course-info">
+          <img class="datepick" src="../assets/img/datepick.png" alt="">
+          <!-- Display the date of the event in h5 -->
+            <h5>coming in 2 days </h5>
+            <h6>Event 3</h6>
+            <h2>Stands</h2>
+            <p>Description of the event</p>
+            <img src="../assets/img/location.png" alt="">
+          </div>
+        </div>
+      </div>
+      </div>
+        <div class="spacer-after">
+        </div>
+        <div id="Day2">
+      <div class="Title" style="margin-bottom: 4em;">
+        <h2>Events of the day 2</h2>
+        </div>
+        <div class="courses-container">
+          <div class="course">
+            <div class="course-preview">
+              <img src="../assets/img/Conference.jpg" alt="">
+            </div>
+            <div class="course-info">
+            <img class="datepick" src="../assets/img/datepick.png" alt="">
+            <!-- Display the date of the event in h5 -->
+              <h5>coming in 3 days </h5>
+              <h6>Event 1</h6>
+              <h2>Conference</h2>
+              <p>Description of the event</p>
+              <img src="../assets/img/location.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="courses-container">
+          <div class="course">
+            <div class="course-preview">
+              <img src="../assets/img/formations.jpeg" alt="">
+            </div>
+            <div class="course-info">
+            <img class="datepick" src="../assets/img/datepick.png" alt="">
+            <!-- Display the date of the event in h5 -->
+              <h5>coming in 3 days </h5>
+              <h6>Event 2</h6>
+              <h2>Formations</h2>
+              <p>Description of the event</p>
+              <img src="../assets/img/location.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="courses-container">
+          <div class="course">
+            <div class="course-preview">
+              <img src="../assets/img/stands.jpg" alt="">
+            </div>
+            <div class="course-info">
+            <img class="datepick" src="../assets/img/datepick.png" alt="">
+            <!-- Display the date of the event in h5 -->
+              <h5>coming in 3 days </h5>
+              <h6>Event 3</h6>
+              <h2>Stands</h2>
+              <p>Description of the event</p>
+              <img src="../assets/img/location.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+      </div>
+</body>
+</html>
