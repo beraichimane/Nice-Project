@@ -1,15 +1,12 @@
 from django.db import models
-
-
 class Event(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField()
-    thumbnail = models.ImageField()
+    thumbnail = models.ImageField(upload_to="thumbnail")
     created = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
         return self.title
-# Create your models here.
 
 class EventLink(models.Model):
     title = models.CharField(max_length=255)
@@ -25,3 +22,7 @@ class EventLocalisation(models.Model):
     y_locale = models.DecimalField(max_digits=9, decimal_places=6)
     def __str__(self):
         return self.locale_name
+
+class Sponsors(models.Model):
+    name = models.CharField(max_length=255)
+    image = models.ImageField()

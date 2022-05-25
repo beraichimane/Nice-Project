@@ -1,0 +1,135 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div id="Day1">
+  <div class="Title">
+    <h2>Events of the day 1</h2>
+  </div>
+  <div class="spacer-after"></div>
+
+  <div class="courses-container">
+    <div class="course">
+      <div class="course-preview">
+        <img src="{% static 'assets/img/Conference.jpg' %}" alt="" />
+      </div>
+      <div class="course-info">
+        <img
+          class="datepick"
+          src="{% static 'assets/img/datepick.png' %}"
+          alt=""
+        />
+        <!-- Display the date of the event in h5 -->
+        <h5>coming in 2 days</h5>
+        <h6>Event 1</h6>
+        <h2>Conference</h2>
+        <p>Description of the event</p>
+        <img src="{% static 'assets/img/location.png' %}" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="courses-container">
+    <div class="course">
+      <div class="course-preview">
+        <img src="{% static 'assets/img/formations.jpeg' %}" alt="" />
+      </div>
+      <div class="course-info">
+        <img
+          class="datepick"
+          src="{% static 'assets/img/datepick.png' %}"
+          alt=""
+        />
+        <!-- Display the date of the event in h5 -->
+        <h5>coming in 2 days</h5>
+        <h6>Event 2</h6>
+        <h2>Formations</h2>
+        <p>Description of the event</p>
+        <img src="{% static 'assets/img/location.png' %}" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="courses-container">
+    <div class="course">
+      <div class="course-preview">
+        <img src="{% static 'assets/img/stands.jpg' %}" alt="" />
+      </div>
+      <div class="course-info">
+        <img
+          class="datepick"
+          src="{% static 'assets/img/datepick.png' %}"
+          alt=""
+        />
+        <!-- Display the date of the event in h5 -->
+        <h5>coming in 2 days</h5>
+        <h6>Event 3</h6>
+        <h2>Stands</h2>
+        <p>Description of the event</p>
+        <img src="{% static 'assets/img/location.png' %}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="spacer-after"></div>
+<div id="Day2">
+  <div class="Title" style="margin-bottom: 4em">
+    <h2>Events of the day 2</h2>
+  </div>
+  <div class="courses-container">
+    <div class="course">
+      <div class="course-preview">
+        <img src="{% static 'assets/img/Conference.jpg' %}" alt="" />
+      </div>
+      <div class="course-info">
+        <img
+          class="datepick"
+          src="{% static 'assets/img/datepick.png' %}"
+          alt=""
+        />
+        <!-- Display the date of the event in h5 -->
+        <h5>coming in 3 days</h5>
+        <h6>Event 1</h6>
+        <h2>Conference</h2>
+        <p>Description of the event</p>
+        <img src="{% static 'assets/img/location.png' %}" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="courses-container">
+    <div class="course">
+      <div class="course-preview">
+        <img src="{% static 'assets/img/formations.jpeg' %}" alt="" />
+      </div>
+      <div class="course-info">
+        <img
+          class="datepick"
+          src="{% static 'assets/img/datepick.png' %}"
+          alt=""
+        />
+        <!-- Display the date of the event in h5 -->
+        <h5>coming in 3 days</h5>
+        <h6>Event 2</h6>
+        <h2>Formations</h2>
+        <p>Description of the event</p>
+        <img src="{% static 'assets/img/location.png' %}" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="courses-container">
+    <div class="course">
+      <div class="course-preview">
+        <img src="{% static 'assets/img/stands.jpg' %}" alt="" />
+      </div>
+      <div class="course-info">
+        <img
+          class="datepick"
+          src="{% static 'assets/img/datepick.png' %}"
+          alt=""
+        />
+        <!-- Display the date of the event in h5 -->
+        <h5>coming in 3 days</h5>
+        <h6>Event 3</h6>
+        <h2>Stands</h2>
+        <p>Description of the event</p>
+        <img src="{% static 'assets/img/location.png' %}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
