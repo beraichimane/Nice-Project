@@ -38,7 +38,13 @@
 		<link rel="stylesheet" href="assets/css/wafae.css">
 		<!-- Responsive CSS -->
 		<link rel="stylesheet" href="assets/css/responsivewafae.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 
 
     <script
@@ -145,7 +151,7 @@
                 <i class="ri-instagram-line"></i>
               </a>
               <a
-                href="https://linkedin.com/company/young-plaste"
+                href="https://www.linkedin.com/company/uh1nice"
                 target="_blank"
                 class="home__social-link"
               >
@@ -393,72 +399,27 @@
         </div>
       </section>
     </main>
-
+    <div id="map" style="width:640px ; height: 400px;"></div>
+    <!-- =============== MAP ================= -->
+    <script>
+      window.onload = function(){
+        console.log('Page chargée') ;
+        var map = L.map('map').setView([33.031124, -7.616494], 13);
+        var tileStreets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+     maxZoom: 18,
+     id: 'mapbox/streets-v11',
+     accessToken: 'pk.eyJ1IjoiaW1hbmU3IiwiYSI6ImNsMjJlcWgzdjFmaXIzYmxwM2diN2Jvb3gifQ.golWI0ZY9McUty3mxZImag'
+ });
+  tileStreets.addTo(map);
+    var marker = L.marker([33.031124, -7.616494]).addTo(map) ;
+      }
+     
+        
+    
+    </script>
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
-      
-      <!--Debut de la barre des sponsors -->
-        <section class="partner-area ptb-120" >
-          <div class="container">
-            <div class="row">
-
-              <div class="footer__content" >
-                <a href="#" class="footer__logo"> Sponsors and Partners</a>
-              </div>
-    
-              <div class="platinum-partner-slides owl-carousel owl-theme" >
-                <div class="col-lg-12 col-md-12" >
-                  <div class="partner-item" >
-                    <a href="#">
-                      <img src="assets/img/logo/ebay.png" alt="image">
-                    </a>
-                  </div>
-                </div>
-    
-                <div class="col-lg-12 col-md-12">
-                  <div class="partner-item">
-                    <a href="#">
-                      <img src="assets/img/logo/Airbnb.png" alt="image">
-                    </a>
-                  </div>
-                </div>
-    
-                <div class="col-lg-12 col-md-12">
-                  <div class="partner-item">
-                    <a href="#">
-                      <img src="assets/img/logo/alibaba.png" alt="image">
-                    </a>
-                  </div>
-                </div>
-    
-                <div class="col-lg-12 col-md-12">
-                  <div class="partner-item">
-                    <a href="#">
-                      <img src="assets/img/logo/GOOGLE.png" alt="image">
-                    </a>
-                  </div>
-                </div>
-    
-                <div class="col-lg-12 col-md-12">
-                  <div class="partner-item">
-                    <a href="#">
-                      <img src="assets/img/logo/IBM-LOGO.png" alt="image">
-                    </a>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-12">
-                <div class="border"></div>
-              </div>
-    
-            </div>
-          </div>
-       
-        </section>
-      
-
-      <!-- FIN DES SPONSORS-->
       <div class="footer__container container grid">
         <!-- 1 -->
         <div class="footer__content"  >
@@ -485,7 +446,7 @@
 
             <div class="footer__social">
               <a
-                href="https://www.linkedin.com/company/young-plaste"
+                href="https://www.linkedin.com/company/uh1nice"
                 target="_blank"
                 class="footer__social-link"
               >
@@ -501,7 +462,7 @@
                 <img src="assets/img/app-icons/ig.png" />
               </a>
               <a
-                href="https://www.linkedin.com/company/young-plaste"
+                href="https://www.facebook.com/Nice_uh1-110603931657737/"
                 target="_blank"
                 class="footer__social-link"
               >
