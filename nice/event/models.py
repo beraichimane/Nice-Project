@@ -4,6 +4,7 @@ class Event(models.Model):
     description = models.TextField()
     thumbnail = models.ImageField(upload_to="thumbnail")
     created = models.DateTimeField(auto_now_add=True)
+    eventDay = models.DateField(null=True)
     
     def __str__(self):
         return self.title
@@ -26,3 +27,9 @@ class EventLocalisation(models.Model):
 class Sponsors(models.Model):
     name = models.CharField(max_length=255)
     image = models.ImageField()
+
+class speaker(models.Model):
+    full_name = models.CharField(max_length=255)
+    image = models.ImageField()
+    description = models.TextField(blank=True)
+    
