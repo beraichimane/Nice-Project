@@ -27,10 +27,6 @@ body {
 	margin: 0;
 }
 
-.courses-container {
-	
-}
-
 .course {
 	background-color: #fff;
 	border-radius: 10px;
@@ -39,7 +35,6 @@ body {
 	max-width: 100%;
 	margin: 20px;
 	overflow: hidden;
-	width: 1000px;
 }
 
 .course h6 {
@@ -76,6 +71,7 @@ body {
 	color: #fff;
 	padding: 30px;
 	max-width: 250px;
+	width: 45%;
 }
 
 .course-preview a {
@@ -105,8 +101,12 @@ body {
   position: absolute;
   bottom: 10px;
   left: 10px;
+  width: 65px;
 }
-
+.location
+{
+	width: 65px;
+}
 
 .floating-text {
 /*	background-color: #001F61;*/
