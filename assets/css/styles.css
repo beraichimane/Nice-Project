@@ -12,15 +12,15 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
-  --first-color: #3e69bb;
-  --first-color-alt: #3e69bb;
-  --first-color-light: #b5d43b;
-  --first-color-lighten: #b5d43b;
+  --first-color: #007FFF;
+  --first-color-alt: #17224D;
+  --first-color-light: #17E9E1;
+  --first-color-lighten: #F5FAFA;
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
-  --body-color: #f7f7f7;
-  --container-color: #f7f7f7;
+  --body-color: #F5FAFA;
+  --container-color: #F5FAFA;
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -172,7 +172,11 @@ the website, in dark theme
   margin-bottom: var(--mb-2);
   line-height: 140%;
 }
-
+.section__title-center-exp {
+  font-size: var(--h2-font-size);
+  line-height: 140%;
+  text-align: center;
+}
 .section__title-center {
   text-align: center;
 }
@@ -755,7 +759,7 @@ the website, in dark theme
 
 /*=============== FOOTER ===============*/
 .footer {
-  background-color:  var(--first-color);
+  background-color:  var(--first-color-alt);
   
 }
 .footer__container {
@@ -786,6 +790,7 @@ the website, in dark theme
 .footer__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1-5);
+  color: var(--first-color-lighten);
 }
 
 .footer__subscribe {
@@ -854,7 +859,7 @@ the website, in dark theme
 /*=============== SCROLL UP ===============*/
 .scrollup {
   position: fixed;
-  background-color: var(--first-color);
+  background-color: var(--first-color-alt);
   right: 1rem;
   bottom: -30%;
   display: inline-flex;
@@ -1179,5 +1184,14 @@ the website, in dark theme
     border-radius: 100%;
   }
 }
-
+/**************************** Map **********************/
+.map-div{
+  width: 640px;
+    height: 400px;
+    position: relative;
+    outline: none;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
 
