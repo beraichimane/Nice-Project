@@ -1186,12 +1186,15 @@ the website, in dark theme
 }
 /**************************** Map **********************/
 .map-div{
-  width: 640px;
+    display: flex;
     height: 400px;
     position: relative;
     outline: none;
-    margin-left: 100px;
-    margin-top: 50px;
+    margin-left: 30px ;
+    margin-right: 30px ;
+    margin-top: 60px;
+    margin-bottom: 20px;
     border-radius: 20px;
+    
 }
 
