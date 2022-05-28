@@ -221,6 +221,9 @@ the website, in dark theme
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+   top: 0;
+   z-index: 100;
 }
 
 .nav__logo,
@@ -1186,8 +1189,8 @@ the website, in dark theme
 }
 /**************************** Map **********************/
 .map-div{
-    display: flex;
-    height: 400px;
+   /* display: flex;*/
+    height: 375px;
     position: relative;
     outline: none;
     margin-left: 30px ;
